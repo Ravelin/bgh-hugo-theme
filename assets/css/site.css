@@ -22,3 +22,17 @@ input#show-menu:checked~#toggle-menu .menu-close {
 .dark #toggle-dark-mode .mode-light {
   display: none;
 }
+
+
+.cover {
+  background: url(https://source.unsplash.com/1920x1080/?code) center center no-repeat;
+  background-size: cover;
+}
+
+.siteTitle {
+  font-size: 17rem;
+  font-weight: 600;
+  color: #fff;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+}

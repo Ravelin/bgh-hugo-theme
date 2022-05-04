@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}' class="dark">
     {{ partial "head.html" . }}
     <body class="flex flex-col min-h-screen bg-bg text-fg">
@@ -9,5 +9,17 @@
         </main>
         {{- partial "dev-parameters.html" . -}}
         {{- partial "footer.html" . -}}
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+
+        {{ if .IsHome }}
+            {{- partial "cover.html" . -}}
+        {{ end }}
     </body>
 </html>
