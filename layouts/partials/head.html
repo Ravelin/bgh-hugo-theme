@@ -29,7 +29,7 @@
     {{ else }}
         {{- $styles := slice $vars $windi $siteCSS | resources.Concat "css/styles.css" | minify | fingerprint | resources.PostProcess -}}
         {{- $scripts := slice $siteJS | resources.Concat "js/scripts.js" | minify | fingerprint | resources.PostProcess -}}
-    <link rel="stylesheet" href="/css/styles.css" integrity="{{ $styles.Data.Integrity }}">
-    <script defer="defer" src="/js/scripts.js" integrity="{{ $scripts.Data.Integrity }}"></script>
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    <script defer="defer" src="{{ $scripts.RelPermalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
     {{ end -}}
 </head>
