@@ -1,0 +1,6 @@
+/node_modules
+/exampleSite/public
+/exampleSite/hugo_stats.json
+.pnpm-debug.log
+# Local Netlify folder
+.netlify
