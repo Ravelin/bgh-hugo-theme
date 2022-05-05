@@ -30,9 +30,14 @@ input#show-menu:checked~#toggle-menu .menu-close {
 }
 
 .siteTitle {
-  font-size: 17rem;
+  font-family: "Barlow Condensed";
+  font-size: 8vh;
   font-weight: 600;
   color: #fff;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black; */
+}
+
+@media only screen and (min-width: 32em) {
+  .siteTitle {
+      font-size: 7vh;
+  }
 }
