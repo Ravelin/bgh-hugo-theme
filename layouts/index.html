@@ -1,3 +1,16 @@
+{{ define "home" }}
+    <div class="flex flex-col cover min-h-screen w-full justify-center content-center items-center text-white font-800 tracking-wider">
+        <div class="flex justify-center items-center" style="font-size: 8rem;">
+            <h1>{{ .Title }}</h1>
+        </div>
+        <div class="flex flex-row -mt-6 space-x-4">
+            {{ range sort .Site.Menus.main "Name" "asc" }}
+                <a href="{{ .URL }}" class="">{{ .Title}}</a>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
+
 {{ define "main" }}
 
 {{ end }}

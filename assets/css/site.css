@@ -25,12 +25,6 @@ input#show-menu:checked~#toggle-menu .menu-close {
 
 
 .cover {
-  background: url(https://source.unsplash.com/1920x1080/?code) center center no-repeat;
+  background: url(https://source.unsplash.com/1920x1080/?code,dark) center center no-repeat;
   background-size: cover;
-}
-
-.siteTitle {
-  font-size: 7.5vh;
-  font-weight: 600;
-  color: #fff;
 }

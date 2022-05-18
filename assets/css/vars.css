@@ -36,25 +36,27 @@
   --c-gray-800: hsl(216, 27.9%, 16.9%);
   --c-gray-900: hsl(216, 39.3%, 11%);
 
+  --c-red-100: hsl(0°, 86%, 97%);
+
 
   /**
    * Typography
    * --------------------------------------------------------------------- */
-  
+
   --font-family-base: "Barlow", "Inter", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --font-family-mono: "Fira Code", source-code-pro, menlo, monaco, consolas, "Courier New", monospace;
   --font-family-display: "Barlow Condensed", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  
+
   /**
    * Z Indexes
    *
    * Algolia SearchBox has a z-index of 200, so make sure not to go above
    * that value.
    * --------------------------------------------------------------------- */
-  
+
   --z-index-navbar: 10;
   --z-index-sidebar: 6;
-  
+
   --shadow-rgb: 0, 0, 0;
 
   /**
@@ -66,14 +68,14 @@
   /**
    * Sizes
    * --------------------------------------------------------------------- */
-  
+
   --header-height: 2.5rem;
   --sidebar-width: 16rem;
   --sections-sidebar-width: 16rem;
   --nprogress-color: red;
   --nprogress-z-index: 999;
   }
-  
+
 html.dark {
   --c-brand: hsl(203.1, 65.8%, 60.4%);
   --c-brand-highlight: hsla(203, 66%, 45%, 0.6);
@@ -104,9 +106,9 @@ html.dark {
   --c-code: hsl(221deg 39% 89%)
 
   --shadow-rgb: 255, 255, 255;
-  
+
   }
-  
+
   /** Fallback Styles */
   :root {
   --c-divider: var(--c-divider-light);
@@ -118,4 +120,3 @@ html.dark {
   --code-font-family: var(--font-family-mono);
   --code-font-size: 14px;
   }
-  
