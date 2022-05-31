@@ -3,11 +3,11 @@
         <div class="flex justify-center items-center" style="font-size: 8rem;">
             <h1>{{ .Title }}</h1>
         </div>
-        <!-- <div class="flex flex-row -mt-6 space-x-4">
+        <div class="flex flex-row -mt-6 space-x-4">
             {{ range sort .Site.Menus.main "Name" "asc" }}
                 <a href="{{ .URL }}" class="">{{ .Title}}</a>
             {{ end }}
-        </div> -->
+        </div>
     </div>
 {{ end }}
 
