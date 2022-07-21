@@ -5,12 +5,12 @@
                 <div class="flex w-full justify-between items-center">
                     <div class="flex flex-col">
                         <a class="lowercase no-underline text-slate-800" href="{{ .RelPermalink }}">{{ lower .Title }}</a>
-                        <span class="text-slate-400 text-sm"> {{ .Params.Date | time.Format ":date_long" }} </span>
+                        <span class="text-fg text-sm"> {{ .Params.Date | time.Format ":date_long" }} </span>
                     </div>
-                    <span class="text-slate-400 text-sm">Reading time: {{ math.Round (div (countwords .Content) 220.0) }} minutes.</span>
+                    <span class="text-fg text-sm">Reading time: {{ math.Round (div (countwords .Content) 220.0) }} minutes.</span>
                 </div>
                 <div>
-                    <p class="text-slate-600 text-sm">
+                    <p class="text-sm text-fg">
                         {{ .Summary }}
                     </p>
                 </div>
