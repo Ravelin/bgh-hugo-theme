@@ -30,6 +30,7 @@
         {{- $styles := slice $vars $windi $siteCSS | resources.Concat "../css/styles.css" | minify | fingerprint | resources.PostProcess -}}
         {{- $scripts := slice $siteJS | resources.Concat "../js/scripts.js" | minify | fingerprint | resources.PostProcess -}}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
-        <script defer="defer" src="{{ $scripts.RelPermalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
-    {{ end -}}
+        {{- if not .IsHome }}
+            <script defer="defer" src="{{ $scripts.RelPermalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
+        {{- end }}    {{ end -}}
 </head>
